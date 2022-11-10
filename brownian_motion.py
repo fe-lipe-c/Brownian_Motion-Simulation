@@ -12,9 +12,16 @@ def to_df(bm_list):
     return df
 
 
-def brownian_motion_II(dt, N, seed=1):
+def brownian_motion_increment(dt, N, seed=1):
     """Brownian motion using independent (equal) increments."""
     np.random.seed(seed)
     y = np.random.normal(loc=0, scale=dt, size=N)
     b = np.cumsum(y)
     return b
+
+
+def brownian_motion_interpolation(bm_path):
+    """Brownian motion through interpolation of a given path."""
+    for i in range(len(bm_path)):
+        n_mean = ()
+        bs = np.random.normal(loc=)
