@@ -23,3 +23,10 @@ To get a refinement of an already simulated path, one can use the idea of Lévy'
 A path with 10 sampled BM interpolated 4 times
 
 ![path_interpolation](img/BM_interpolation.png) 
+
+#### To Do
+
+- [ ] Lévy-Ciesielski algorithm
+- [ ] Donsker's invariance principle
+- [ ] Q-Brownian motion
+- [ ] Stochastic Differential Equations
