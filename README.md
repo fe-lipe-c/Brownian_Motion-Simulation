@@ -4,7 +4,7 @@ This repo is a partial implementation of the chapter 'Simulation of Brownian mot
 
 ### Independent Increments
 
-The first algorithm implemented to generate a Brownian path is the use of stationary and independent increments:
+The first algorithm implemented to generate a Brownian path uses stationary and independent increments:
 
 ![algo_independent_increments](img/algo_BM_increments.png) 
 
