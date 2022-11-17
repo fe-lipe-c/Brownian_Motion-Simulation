@@ -8,7 +8,7 @@ from brownian_motion import BM_increment, BM_interpolation, to_df
 
 # Brownian path with independent increments
 
-bm_list = BM_increment(dt=0.1, N=3000, seed=102)
+bm_list = BM_increment(dt=1, N=3000, seed=10)
 df_bm = to_df(bm_list)
 
 chart_bm = (
