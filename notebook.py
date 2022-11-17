@@ -16,6 +16,6 @@ chart_bm = (
         alt.X("index", title="Time"),
         alt.Y("bm", title="B"),
     )
-    .properties(width=600, height=300)
+    .properties(width=800, height=400)
 )
 chart_bm.save("bm_II.html")
