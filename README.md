@@ -19,3 +19,7 @@ This method works particularly well if the step size $\delta = t_{j}- t_{j-1}$ i
 To get a refinement of an already simulated path, one can use the idea of Lévy's original argument.
 
 ![algo_interpolation](img/algo_BM_interpolation.png) 
+
+A path with 10 sampled BM interpolated 4 times
+
+![path_interpolation](img/BM_interpolation.png) 

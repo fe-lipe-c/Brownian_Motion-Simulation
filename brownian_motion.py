@@ -17,10 +17,11 @@ def BM_increment(dt, N, seed=1):
     np.random.seed(seed)
     y = np.random.normal(loc=0, scale=dt, size=N)
     b = np.cumsum(y)
+    b = np.insert(b, 0, 0)
     return b
 
 
-def brownian_motion_interpolation(bm_path, time_index, alpha=0.5):
+def BM_interpolation(bm_path, time_index, alpha=0.5):
     """Brownian motion through interpolation of a given path.
 
     alpha: parameter for the convex sum between s_0 and s_1 to get s.
@@ -40,7 +41,7 @@ def brownian_motion_interpolation(bm_path, time_index, alpha=0.5):
         bs_var = (s_1 - s) * (s - s_0) / (s_1 - s_0)
 
         B_s = np.random.normal(loc=bs_mean, scale=bs_var, size=1)
-        interp_path.extend([B_0, B_s])
+        interp_path.extend([B_0, B_s[0]])
         new_time_index.extend([s_0, s])
 
     interp_path.append(bm_path[-1])
